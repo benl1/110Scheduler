@@ -54,7 +54,7 @@ public class ScheduledData {
          attempt++;
          
          
-         if (attempt > 10){
+         if (attempt > 20){
            System.out.println("Hour on " + _schedule.get(i).getName() + ": " + _schedule.get(i).getHour(j).getStart() + 
                " cannot be filled");
            
@@ -68,7 +68,7 @@ public class ScheduledData {
        if (_schedule.get(i).getHour(j).isRegistered(_data.getStaff().get(randomID))){
          attempt++;
          
-         if (attempt > 10) {
+         if (attempt > 20) {
            System.out.println("Hour on " + _schedule.get(i).getName() + ": " + _schedule.get(i).getHour(j).getStart() + 
                " cannot be filled");
            
